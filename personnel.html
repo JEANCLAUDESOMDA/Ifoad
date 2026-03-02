@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personnel - IFOAD-UJKZ</title>
+
+    <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CSS personnalisé intégré -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* Ouvrir les dropdowns au survol */
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        /* Animation douce pour dropdown */
+        .dropdown-menu {
+            transition: all 0.3s ease;
+        }
+
+        /* Ajustement images */
+        .img-thumbnail {
+            max-width: 90px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="bg-light p-3" role="banner">
+    <div class="d-flex justify-content-between align-items-center">
+        <img src="image/logo_ujkz.png" alt="Logo UJKZ" width="160" height="140">
+        <h1 class="text-center flex-grow-1">Personnel - IFOAD-UJKZ</h1>
+        <img src="image/logo_ifoad.png" alt="Logo IFOAD" width="120" height="90">
+    </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Navigation principale">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">IFOAD-UJKZ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIFOAD">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarIFOAD">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+
+                <!-- Historique -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="historiqueDropdown" role="button" data-bs-toggle="dropdown">Historique</a>
+                    <ul class="dropdown-menu" aria-labelledby="historiqueDropdown">
+                        <li><a class="dropdown-item" href="historique.html#ujkz">UJKZ</a></li>
+                        <li><a class="dropdown-item" href="historique.html#ifoad">IFOAD</a></li>
+                        <li><a class="dropdown-item" href="historique.html#sia">Licence SIA</a></li>
+                    </ul>
+                </li>
+
+                <!-- Formations -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="formationsDropdown" role="button" data-bs-toggle="dropdown">Formations</a>
+                    <ul class="dropdown-menu" aria-labelledby="formationsDropdown">
+                        <li><a class="dropdown-item" href="formations.html#licence">Licence</a></li>
+                        <li><a class="dropdown-item" href="formations.html#master">Master</a></li>
+                        <li><a class="dropdown-item" href="formations.html#debouches">Débouchés</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="partenaires.html">Partenaires</a></li>
+
+                <!-- Documentation -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="documentationDropdown" role="button" data-bs-toggle="dropdown">Documentation</a>
+                    <ul class="dropdown-menu" aria-labelledby="documentationDropdown">
+                        <li><a class="dropdown-item" href="documentation.html#licence">Licence</a></li>
+                        <li><a class="dropdown-item" href="documentation.html#master">Master</a></li>
+                    </ul>
+                </li>
+
+                <!-- Établissements -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="etablissementsDropdown" role="button" data-bs-toggle="dropdown">Établissements</a>
+                    <ul class="dropdown-menu" aria-labelledby="etablissementsDropdown">
+                        <li><a class="dropdown-item" href="index.html">IFOAD</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#ibam">IBAM</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#ipermic">IPERMIC</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#issp">ISSP</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#igeed">IGEED</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#issdh">ISSDH</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sh">SH</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#lac">LAC</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#svt">SVT</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sds">SDS</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sea">SEA</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="traitement.html">Traitement</a></li>
+                <li class="nav-item"><a class="nav-link" href="admission.html">Admission</a></li>
+
+                <!-- Programme -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="programmeDropdown" role="button" data-bs-toggle="dropdown">Programme</a>
+                    <ul class="dropdown-menu" aria-labelledby="programmeDropdown">
+                        <li><a class="dropdown-item" href="programme.html#licence1">Licence 1</a></li>
+                        <li><a class="dropdown-item" href="programme.html#licence2">Licence 2</a></li>
+                        <li><a class="dropdown-item" href="programme.html#licence3">Licence 3</a></li>
+                        <li><a class="dropdown-item" href="programme.html#master">Master</a></li>
+                    </ul>
+                </li>
+
+                <!-- Personnel -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="personnelDropdown" role="button" data-bs-toggle="dropdown">Personnel</a>
+                    <ul class="dropdown-menu" aria-labelledby="personnelDropdown">
+                        <li><a class="dropdown-item" href="personnel.html#direction">Direction</a></li>
+                        <li><a class="dropdown-item" href="personnel.html#enseignants">Enseignants</a></li>
+                        <li><a class="dropdown-item" href="personnel.html#atos">Personnel ATOS</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="actualites.html">Actualités</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="container my-4">
+
+    <!-- DIRECTION -->
+    <section id="direction" class="mb-5">
+        <h2 class="mb-4">Direction de l'IFOAD</h2>
+        <table class="table table-striped table-bordered align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Photo</th>
+                    <th>Nom</th>
+                    <th>Fonction</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="image/Marie_Francoise_Ouedraogo.jpg " class="img-thumbnail"></td>
+                    <td>Marie Françoise OUEDRAOGO</td>
+                    <td>Directrice</td>
+                </tr>
+                <tr>
+                    <td><img src="image/urbain_traore.jpg" class="img-thumbnail"></td>
+                    <td>Dr. Urbain TRAORÉ</td>
+                    <td>Directeur adjoint</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- ENSEIGNANTS -->
+    <section id="enseignants" class="mb-5">
+        <h2 class="border-bottom pb-2">Enseignants</h2>
+            <p class="lead">
+                Les enseignants de l'IFOAD sont des professeurs et maîtres de conférences de l'UJKZ, spécialisés dans divers domaines.
+            </p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Domaines d'expertise :</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Informatique et programmation (Java, Python, Web)</li>
+                        <li class="list-group-item">Réseaux et sécurité informatique</li>
+                        <li class="list-group-item">Mathématiques appliquées et analyse de données</li>
+                        <li class="list-group-item">Gestion de projet TIC et innovation numérique</li>
+                        <li class="list-group-item">Bases de données et intelligence artificielle</li>
+                    </ul><br>
+                </div>
+            </div>
+        <h2 class="mb-4"> Quelques enseignants du parcours</h2>
+        <table class="table table-striped table-bordered align-middle">
+            <thead class="table-dark">
+                <tr>
+                    <th>Photo</th>
+                    <th>Nom</th>
+                    <th>Discipline</th>
+                    <th>Contact</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="image/KOALA-Picture.png" class="img-thumbnail"></td>
+                    <td>Dr. Gouyaon KOALA</td>
+                    <td>Génie logiciel</td>
+                    <td><a href="mailto:gouayonkoala1@gmail.com">gouayonkoala1@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td><img src="image/Inoussa-Picture.jpg" class="img-thumbnail"></td>
+                    <td>Dr. Inoussa MALGOUBRI</td>
+                    <td>Anglais</td>
+                    <td><a href="mailto:inosmalg@gmail.com">inosmalg@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td><img src="image/sonfack.jpg" class="img-thumbnail"></td>
+                    <td>Dr. Serges Sounchio SONFACK</td>
+                    <td>Théorie des graphes</td>
+                    <td><a href="mailto:sergesonfack@gmail.com">sergesonfack@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td><img src="image/batcho.png" class="img-thumbnail"></td>
+                    <td>Dr. Lucien BATCHO</td>
+                    <td>Communication</td>
+                    <td><a href="mailto:lucien.batcho@gmail.com">lucien.batcho@gmail.com</a></td>
+                </tr>
+                <tr>
+                    <td><img src="image/somda.jpg" class="img-thumbnail"></td>
+                    <td>Dr. Florent Aimé SOMDA</td>
+                    <td>Base de données</td>
+                    <td><a href="mailto:aimesomda@gmail.com">aimesomda@gmail.com</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- PERSONNEL ATOS -->
+    <section id="atos" class="mb-5">
+        <h2 class="mb-4">Personnel ATOS</h2>
+        <table class="table table-striped table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>N°</th>
+                    <th>Nom et prénom(s)</th>
+                    <th>Fonction</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>01</td><td>BOUNDAOGO François</td><td>CISU / CSAF</td></tr>
+                <tr><td>02</td><td>YAGO Mohamed Aziz</td><td>Technicien</td></tr>
+                <tr><td>03</td><td>DIEME Moïse</td><td>Technicien</td></tr>
+                <tr><td>04</td><td>KOUSSE/NADEMBEGA Edoxie Opportune</td><td>Secrétaire</td></tr>
+                <tr><td>05</td><td>TIEMTORE/KONVOLBO Josiane</td><td>CASU / Scolarité</td></tr>
+                <tr><td>06</td><td>BEOGO/ZOMBRE Alice</td><td>CASU / Secrétaire Principale</td></tr>
+            </tbody>
+        </table>
+        <div class="mt-3">
+            <strong>NB :</strong>
+            <ul>
+                <li>CISU = Conseiller d'Intendance Scolaire et Universitaire</li>
+                <li>CASU = Conseiller d'Administration Scolaire et Universitaire</li>
+                <li>CSAF = Chef du Service Administratif et Financier</li>
+            </ul>
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-dark text-white text-center p-3">
+    <p>IFOAD-UJKZ © 2026 | Universités publiques du Burkina Faso</p>
+</footer>
+
+<!-- Bootstrap JS local -->
+<script src="js/bootstrap.bundle.min.js"></script>
+<script>
+    // Affichage de la date
+    document.getElementById("date").textContent = new Date().toLocaleDateString('fr-FR', {
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    });
+    </script>
+</body>
+</html>

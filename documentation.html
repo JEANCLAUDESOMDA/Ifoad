@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - IFOAD-UJKZ</title>
+
+    <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CSS personnalisé intégré -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* Ouvrir les dropdowns au survol */
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        /* Animation douce pour dropdown */
+        .dropdown-menu {
+            transition: all 0.3s ease;
+        }
+
+        /* Ajustement images */
+        .img-thumbnail {
+            max-width: 90px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="bg-light p-3" role="banner">
+    <div class="d-flex justify-content-between align-items-center">
+        <img src="image/logo_ujkz.png" alt="Logo UJKZ" width="160" height="140">
+        <h1 class="text-center flex-grow-1">Documentation - IFOAD-UJKZ</h1>
+        <img src="image/logo_ifoad.png" alt="Logo IFOAD" width="120" height="90">
+    </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Navigation principale">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">IFOAD-UJKZ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIFOAD">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarIFOAD">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+
+                <!-- Historique -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="historiqueDropdown" role="button" data-bs-toggle="dropdown">Historique</a>
+                    <ul class="dropdown-menu" aria-labelledby="historiqueDropdown">
+                        <li><a class="dropdown-item" href="historique.html#ujkz">UJKZ</a></li>
+                        <li><a class="dropdown-item" href="historique.html#ifoad">IFOAD</a></li>
+                        <li><a class="dropdown-item" href="historique.html#sia">Licence SIA</a></li>
+                    </ul>
+                </li>
+
+                <!-- Formations -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="formationsDropdown" role="button" data-bs-toggle="dropdown">Formations</a>
+                    <ul class="dropdown-menu" aria-labelledby="formationsDropdown">
+                        <li><a class="dropdown-item" href="formations.html#licence">Licence</a></li>
+                        <li><a class="dropdown-item" href="formations.html#master">Master</a></li>
+                        <li><a class="dropdown-item" href="formations.html#debouches">Débouchés</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="partenaires.html">Partenaires</a></li>
+
+                <!-- Documentation -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="documentationDropdown" role="button" data-bs-toggle="dropdown" >Documentation</a>
+                    <ul class="dropdown-menu" aria-labelledby="documentationDropdown">
+                        <li><a class="dropdown-item" href="documentation.html#licence">Licence</a></li>
+                        <li><a class="dropdown-item" href="documentation.html#master">Master</a></li>
+                    </ul>
+                </li>
+
+                <!-- Établissements -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="etablissementsDropdown" role="button" data-bs-toggle="dropdown">Établissements</a>
+                    <ul class="dropdown-menu" aria-labelledby="etablissementsDropdown">
+                        <li><a class="dropdown-item" href="index.html">IFOAD</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#ibam">IBAM</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#ipermic">IPERMIC</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#issp">ISSP</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#igeed">IGEED</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#issdh">ISSDH</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sh">SH</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#lac">LAC</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#svt">SVT</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sds">SDS</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sea">SEA</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="traitement.html">Traitement</a></li>
+                <li class="nav-item"><a class="nav-link" href="admission.html">Admission</a></li>
+
+                <!-- Programme -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="programmeDropdown" role="button" data-bs-toggle="dropdown">Programme</a>
+                    <ul class="dropdown-menu" aria-labelledby="programmeDropdown">
+                        <li><a class="dropdown-item" href="programme.html#licence1">Licence 1</a></li>
+                        <li><a class="dropdown-item" href="programme.html#licence2">Licence 2</a></li>
+                        <li><a class="dropdown-item" href="programme.html#licence3">Licence 3</a></li>
+                        <li><a class="dropdown-item" href="programme.html#master">Master</a></li>
+                    </ul>
+                </li>
+
+                <!-- Personnel -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="personnelDropdown" role="button" data-bs-toggle="dropdown">Personnel</a>
+                    <ul class="dropdown-menu" aria-labelledby="personnelDropdown">
+                        <li><a class="dropdown-item" href="personnel.html#direction">Direction</a></li>
+                        <li><a class="dropdown-item" href="personnel.html#enseignants">Enseignants</a></li>
+                        <li><a class="dropdown-item" href="personnel.html#atos">Personnel ATOS</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="actualites.html">Actualités</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Contenu principal -->
+    <main class="container my-4">
+        <section id="licence">
+            <h2>Documentation Licence</h2>
+            <p>
+                La documentation de la Licence appliquée de l'IFOAD présente les conditions d'accès, 
+                les modalités de passage et les programmes détaillés.  
+                Elle précise que l'admission se fait par <strong>test d'entrée</strong> et que la moyenne minimale de passage est de <strong>12/20</strong>.  
+                Les étudiants disposent de guides pédagogiques, de supports de cours et de ressources numériques pour accompagner leur apprentissage.
+            </p>
+        </section>
+
+        <section id="master">
+            <h2>Documentation Master</h2>
+            <p>
+                La documentation du Master de l'IFOAD décrit les conditions d'accès, les modules de formation et les exigences académiques.  
+                L'admission se fait également par <strong>test d'entrée</strong>.  
+                Le passage en deuxième année requiert la validation des unités d'enseignement et la soutenance d'un projet de recherche, avec une moyenne minimale de <strong>12/20</strong>.  
+                Les étudiants ont accès à des ressources numériques, des bibliothèques virtuelles et des encadrements pour leurs travaux de recherche.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+     <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5>Universités Publiques du Burkina</h5>
+                <ul class="list-unstyled">
+                    <li>Université Joseph KI-ZERBO (UJKZ)</li>
+                    <li>Université Thomas SANKARA (UTS)</li>
+                    <li>Université Nazi BONI (UNB)</li>
+                    <li>Université Norbert ZONGO (UNZ)</li>
+                    <li>Université de Fada N'Gourma (UFDG)</li>
+                    <li>Université de Dedougou (UDDG)</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5>Contact IFOAD</h5>
+                <p>
+                    Mail : <a href="mailto:urbain.traore@ujkz.fr" class="text-white text-decoration-none">urbain.traore@ujkz.fr</a><br>
+                    Tél : +226 25 30 70 64<br>
+                    Adresse : Avenue Charles de Gaulle, Ouagadougou
+                </p>
+            </div>
+
+            <div class="col-md-4 mb-4 text-md-end">
+                <h5>Date du jour</h5>
+                <p>Date : <span id="date"></span></p>
+                <p id="date-zone" class="fw-bold text-info"></p>
+            </div>
+        </div>
+        
+        <hr class="bg-light">
+        
+        <div class="text-center">
+            <p class="mb-0">&copy; 2026 IFOAD - Institut de Formation Ouverte et à Distance</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS local -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+    // Affichage de la date
+    document.getElementById("date").textContent = new Date().toLocaleDateString('fr-FR', {
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programme</title>
+
+    <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CSS personnalisé intégré -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* Ouvrir les dropdowns au survol */
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        /* Animation douce pour dropdown */
+        .dropdown-menu {
+            transition: all 0.3s ease;
+        }
+
+        /* Ajustement images */
+        .img-thumbnail {
+            max-width: 90px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="bg-light p-3" role="banner">
+    <div class="d-flex justify-content-between align-items-center">
+        <img src="image/logo_ujkz.png" alt="Logo UJKZ" width="160" height="140">
+        <h1 class="text-center flex-grow-1">Programme</h1>
+        <img src="image/logo_ifoad.png" alt="Logo IFOAD" width="120" height="90">
+    </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Navigation principale">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">IFOAD-UJKZ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIFOAD">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarIFOAD">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+
+                <!-- Historique -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="historiqueDropdown" role="button" data-bs-toggle="dropdown">Historique</a>
+                    <ul class="dropdown-menu" aria-labelledby="historiqueDropdown">
+                        <li><a class="dropdown-item" href="historique.html#ujkz">UJKZ</a></li>
+                        <li><a class="dropdown-item" href="historique.html#ifoad">IFOAD</a></li>
+                        <li><a class="dropdown-item" href="historique.html#sia">Licence SIA</a></li>
+                    </ul>
+                </li>
+
+                <!-- Formations -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="formationsDropdown" role="button" data-bs-toggle="dropdown">Formations</a>
+                    <ul class="dropdown-menu" aria-labelledby="formationsDropdown">
+                        <li><a class="dropdown-item" href="formations.html#licence">Licence</a></li>
+                        <li><a class="dropdown-item" href="formations.html#master">Master</a></li>
+                        <li><a class="dropdown-item" href="formations.html#debouches">Débouchés</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="partenaires.html">Partenaires</a></li>
+
+                <!-- Documentation -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="documentationDropdown" role="button" data-bs-toggle="dropdown">Documentation</a>
+                    <ul class="dropdown-menu" aria-labelledby="documentationDropdown">
+                        <li><a class="dropdown-item" href="documentation.html#licence">Licence</a></li>
+                        <li><a class="dropdown-item" href="documentation.html#master">Master</a></li>
+                    </ul>
+                </li>
+
+                <!-- Établissements -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="etablissementsDropdown" role="button" data-bs-toggle="dropdown">Établissements</a>
+                    <ul class="dropdown-menu" aria-labelledby="etablissementsDropdown">
+                        <li><a class="dropdown-item" href="index.html">IFOAD</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#ibam">IBAM</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#ipermic">IPERMIC</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#issp">ISSP</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#igeed">IGEED</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#issdh">ISSDH</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sh">SH</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#lac">LAC</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#svt">SVT</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sds">SDS</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sea">SEA</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="traitement.html">Traitement</a></li>
+                <li class="nav-item"><a class="nav-link" href="admission.html">Admission</a></li>
+
+                <!-- Programme -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="programmeDropdown" role="button" data-bs-toggle="dropdown">Programme</a>
+                    <ul class="dropdown-menu" aria-labelledby="programmeDropdown">
+                        <li><a class="dropdown-item" href="programme.html#licence1">Licence 1</a></li>
+                        <li><a class="dropdown-item" href="programme.html#licence2">Licence 2</a></li>
+                        <li><a class="dropdown-item" href="programme.html#licence3">Licence 3</a></li>
+                        <li><a class="dropdown-item" href="programme.html#master">Master</a></li>
+                    </ul>
+                </li>
+
+                <!-- Personnel -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="personnelDropdown" role="button" data-bs-toggle="dropdown">Personnel</a>
+                    <ul class="dropdown-menu" aria-labelledby="personnelDropdown">
+                        <li><a class="dropdown-item" href="personnel.html#direction">Direction</a></li>
+                        <li><a class="dropdown-item" href="personnel.html#enseignants">Enseignants</a></li>
+                        <li><a class="dropdown-item" href="personnel.html#atos">Personnel ATOS</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="actualites.html">Actualités</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Contenu principal -->
+    <main class="container my-4">
+        <!-- Introduction -->
+        <section class="mb-5 p-4 border rounded bg-light">
+            <h2 class="text-center mb-4">Programmes détaillés des formations IFOAD-UJKZ</h2>
+            <p class="lead text-center">
+                Découvrez les programmes complets de la Licence en Science Informatique Appliquée (SIA) avec coefficients et crédits.
+            </p>
+        </section>
+
+        <!-- Licence 1 -->
+        <section id="licence1" class="mb-5">
+            <h3 class="mb-4 text-primary">Licence 1</h3>
+            
+            <!-- Semestre 1 -->
+            <div class="mb-4">
+                <h4 class="text-secondary">Semestre 1</h4>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>Code UE</th>
+                                <th>Intitulé de l'Unité d'Enseignement</th>
+                                <th>Coefficient</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MTH1100</td>
+                                <td>Mathématiques</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>INF1100</td>
+                                <td>Informatique de base</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>INF1101</td>
+                                <td>Algorithmique et programmation</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>INF1102</td>
+                                <td>Architecture et systèmes des ordinateurs</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>PHY1100</td>
+                                <td>Physique appliquée</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>CJO1100</td>
+                                <td>Communication</td>
+                                <td>4</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="table-dark">
+                            <tr>
+                                <td colspan="2" class="text-end"><strong>Total des coefficients</strong></td>
+                                <td><strong>30</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Semestre 2 -->
+            <div class="mb-4">
+                <h4 class="text-secondary">Semestre 2</h4>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-primary">
+                            <tr>
+                                <th>Code UE</th>
+                                <th>Intitulé de l'Unité d'Enseignement</th>
+                                <th>Coefficient</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MTH1200</td>
+                                <td>Mathématiques</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>PHY1200</td>
+                                <td>Électronique</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>INF1200</td>
+                                <td>Programmation structurée</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>INF1201</td>
+                                <td>Bases de données</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>INF1202</td>
+                                <td>Organisation et architecture des ordinateurs</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>INF1203</td>
+                                <td>Initiation à Python</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>ANG1200</td>
+                                <td>Anglais</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="table-dark">
+                            <tr>
+                                <td colspan="2" class="text-end"><strong>Total des coefficients</strong></td>
+                                <td><strong>30</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Licence 2 -->
+        <section id="licence2" class="mb-5">
+            <h3 class="mb-4 text-success">Licence 2</h3>
+            
+            <!-- Semestre 3 -->
+            <div class="mb-4">
+                <h4 class="text-secondary">Semestre 3</h4>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-success">
+                            <tr>
+                                <th>Code UE</th>
+                                <th>Intitulé de l'Unité d'Enseignement</th>
+                                <th>Coefficient</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>INF1300</td>
+                                <td>Conception et analyse d'algorithme</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>INF1301</td>
+                                <td>Programmation orientée objet</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>INF1302</td>
+                                <td>Technologies web statique et internet</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>INF1303</td>
+                                <td>Réseaux informatiques</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>INF1304</td>
+                                <td>Sécurité informatique</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>ANG1300</td>
+                                <td>Anglais</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>TCC1300</td>
+                                <td>E-Business</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="table-dark">
+                            <tr>
+                                <td colspan="2" class="text-end"><strong>Total des coefficients</strong></td>
+                                <td><strong>30</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Semestre 4 -->
+            <div class="mb-4">
+                <h4 class="text-secondary">Semestre 4</h4>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-success">
+                            <tr>
+                                <th>Code UE</th>
+                                <th>Intitulé de l'Unité d'Enseignement</th>
+                                <th>Coefficient</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>INF1400</td>
+                                <td>Optimisation et recherche</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>INF1401</td>
+                                <td>Python et gestion de données</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>INF1402</td>
+                                <td>Technologies web dynamique et internet</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>INF1403</td>
+                                <td>Infographie</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>INF1404</td>
+                                <td>Réseaux et systèmes</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>INF1405</td>
+                                <td>Administration de bases de données</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>TCC1400</td>
+                                <td>Principes de gestion des affaires</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="table-dark">
+                            <tr>
+                                <td colspan="2" class="text-end"><strong>Total des coefficients</strong></td>
+                                <td><strong>30</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Licence 3 -->
+        <section id="licence3" class="mb-5">
+            <h3 class="mb-4 text-warning">Licence 3</h3>
+            
+            <!-- Semestre 5 - Génie Logiciel -->
+            <div class="mb-4">
+                <h4 class="text-secondary">Semestre 5 - Parcours Génie Logiciel</h4>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-warning">
+                            <tr>
+                                <th>Code UE</th>
+                                <th>Intitulé de l'Unité d'Enseignement</th>
+                                <th>Coefficient</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>INF1500</td>
+                                <td>Conception de système d'exploitation</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>INF1501</td>
+                                <td>Modélisation et simulation</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>INF1502</td>
+                                <td>Bases de données avancées</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>INF1503</td>
+                                <td>Développement mobile</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>INF1504</td>
+                                <td>Fondamentaux du génie logiciel</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>INF1505</td>
+                                <td>Analyse et conception orientée objet</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>TCC1500</td>
+                                <td>Méthodologie de recherche</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>ANG1500</td>
+                                <td>Anglais</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>TCC1501</td>
+                                <td>Entrepreneuriat</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="table-dark">
+                            <tr>
+                                <td colspan="2" class="text-end"><strong>Total des coefficients</strong></td>
+                                <td><strong>30</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Semestre 5 - Réseaux et Systèmes -->
+            <div class="mb-4">
+                <h4 class="text-secondary">Semestre 5 - Parcours Réseaux et Systèmes</h4>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-warning">
+                            <tr>
+                                <th>Code UE</th>
+                                <th>Intitulé de l'Unité d'Enseignement</th>
+                                <th>Coefficient</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>INF1500</td>
+                                <td>Conception de système d'exploitation</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>INF1501</td>
+                                <td>Modélisation et simulation</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>INF1506</td>
+                                <td>Administration de réseaux</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>INF1507</td>
+                                <td>Administration de systèmes</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>INF1508</td>
+                                <td>Innovations technologiques</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>TCC1500</td>
+                                <td>Méthodologie de recherche</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>ANG1500</td>
+                                <td>Anglais</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>TCC1501</td>
+                                <td>Entrepreneuriat</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="table-dark">
+                            <tr>
+                                <td colspan="2" class="text-end"><strong>Total des coefficients</strong></td>
+                                <td><strong>30</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Semestre 6 - Génie Logiciel -->
+            <div class="mb-4">
+                <h4 class="text-secondary">Semestre 6 - Parcours Génie Logiciel</h4>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-warning">
+                            <tr>
+                                <th>Code UE</th>
+                                <th>Intitulé de l'Unité d'Enseignement</th>
+                                <th>Coefficient</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>INF1600</td>
+                                <td>Informatique distribuée</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>INF1601</td>
+                                <td>Intelligence artificielle</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>INF1602</td>
+                                <td>Génie logiciel</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>STG1600</td>
+                                <td>Projet et stage</td>
+                                <td>18</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="table-dark">
+                            <tr>
+                                <td colspan="2" class="text-end"><strong>Total des coefficients</strong></td>
+                                <td><strong>30</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- Semestre 6 - Réseaux et Systèmes -->
+            <div class="mb-4">
+                <h4 class="text-secondary">Semestre 6 - Parcours Réseaux et Systèmes</h4>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-warning">
+                            <tr>
+                                <th>Code UE</th>
+                                <th>Intitulé de l'Unité d'Enseignement</th>
+                                <th>Coefficient</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>INF1600</td>
+                                <td>Informatique distribuée</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>INF1601</td>
+                                <td>Intelligence artificielle</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>INF1603</td>
+                                <td>Réseaux et sécurité</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>STG1600</td>
+                                <td>Projet et stage</td>
+                                <td>18</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="table-dark">
+                            <tr>
+                                <td colspan="2" class="text-end"><strong>Total des coefficients</strong></td>
+                                <td><strong>30</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+<section id="master" class="mb-5">
+    <h3 class="mb-4 text-danger">Master en Science des Données</h3>
+    
+    <div class="p-4 border rounded bg-light">
+        <h4 class="text-center mb-4">Programme Master en Science des Données (Cycle 2 ans - 4 semestres)</h4>
+        <p class="lead text-center">
+            Formation avancée en analyse de données, machine learning et intelligence artificielle.
+        </p>
+        
+        <div class="mb-5">
+            <h5 class="text-danger mb-3">Master 1 - Semestre 1 </h5>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead class="table-danger">
+                        <tr>
+                            <th>Code UE</th>
+                            <th>Intitulé de l'Unité d'Enseignement</th>
+                            <th>Coefficient</th>                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MDS1700</td>
+                            <td>Statistiques avancées pour la data science</td>
+                            <td>6</td>                            
+                        </tr>
+                        <tr>
+                            <td>MDS1701</td>
+                            <td>Machine Learning fondamental</td>
+                            <td>6</td>                           
+                        </tr>
+                        <tr>
+                            <td>MDS1702</td>
+                            <td>Big Data et bases NoSQL</td>
+                            <td>5</td>                            
+                        </tr>
+                        <tr>
+                            <td>MDS1703</td>
+                            <td>Programmation Python avancée pour la data</td>
+                            <td>5</td>                            
+                        </tr>
+                        <tr>
+                            <td>MDS1704</td>
+                            <td>Visualisation de données</td>
+                            <td>4</td>                           
+                        </tr>
+                        <tr>
+                            <td>MDS1705</td>
+                            <td>Cloud Computing pour la data science</td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="table-dark">
+                        <tr>
+                            <td colspan="2" class="text-end"><strong>Total Semestre 1</strong></td>
+                            <td><strong>30</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+        
+        <!-- Master 1 - Semestre 8 -->
+        <div class="mb-5">
+            <h5 class="text-danger mb-3">Master 1 - Semestre 2 (Tronc commun)</h5>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead class="table-danger">
+                        <tr>
+                            <th>Code UE</th>
+                            <th>Intitulé de l'Unité d'Enseignement</th>
+                            <th>Coefficient</th>                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MDS1800</td>
+                            <td>Deep Learning et réseaux de neurones</td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>MDS1801</td>
+                            <td>Data Mining et découverte de connaissances</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>MDS1802</td>
+                            <td>Data Engineering et ETL</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>MDS1803</td>
+                            <td>Traitement du langage naturel (NLP)</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>MDS1804</td>
+                            <td>Optimisation et recherche opérationnelle</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>MDS1805</td>
+                            <td>Projet data science (collecte, nettoyage, analyse)</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="table-dark">
+                        <tr>
+                            <td colspan="2" class="text-end"><strong>Total Semestre 2</strong></td>
+                            <td><strong>30</strong></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+       
+        <div class="mb-5">
+            <h5 class="text-danger mb-3">Master 2 - Semestre 3 </h5>
+          
+            <div class="mb-4">
+                <h6 class="text-info">Parcours Data Analyst</h6>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-info">
+                            <tr>
+                                <th>Code UE</th>
+                                <th>Intitulé de l'Unité d'Enseignement</th>
+                                <th>Coefficient</th>                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MDS1900A</td>
+                                <td>Business Intelligence et Tableaux de bord</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>MDS1901A</td>
+                                <td>Analyse prédictive en entreprise</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>MDS1902A</td>
+                                <td>Data Storytelling et communication</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>MDS1903A</td>
+                                <td>Analyse de données marketing</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>MDS1904A</td>
+                                <td>Éthique et gouvernance des données</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>MDS1905A</td>
+                                <td>Projet professionnel data analyst</td>
+                                <td>4</td>
+                            </tr>
+                        </tbody>
+                        <tfoot class="table-dark">
+                            <tr>
+                                <td colspan="2" class="text-end"><strong>Total Parcours Data Analyst</strong></td>
+                                <td><strong>30</strong></td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+            
+           <div class="mb-4">
+            <h5 class="text-danger mb-3">Master 2 - Semestre 4 (Mémoire et stage)</h5>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead class="table-danger">
+                        <tr>
+                            <th>Code UE</th>
+                            <th>Intitulé de l'Unité d'Enseignement</th>
+                            <th>Coefficient</th>                            
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>MDS2000</td>
+                            <td>Stage en entreprise (6 mois minimum)</td>
+                            <td>18</td>
+                        </tr>
+                        <tr>
+                            <td>MDS2001</td>
+                            <td>Mémoire de recherche/professionnel</td>
+                            <td>12</td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="table-dark">
+                        <tr>
+                            <td colspan="2" class="text-end"><strong>Total Semestre 4</strong></td>
+                            <td><strong>30</strong></td>
+                        </tr>                        
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <!-- Footer -->
+     <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5>Universités Publiques du Burkina</h5>
+                <ul class="list-unstyled">
+                    <li>Université Joseph KI-ZERBO (UJKZ)</li>
+                    <li>Université Thomas SANKARA (UTS)</li>
+                    <li>Université Nazi BONI (UNB)</li>
+                    <li>Université Norbert ZONGO (UNZ)</li>
+                    <li>Université de Fada N'Gourma (UFDG)</li>
+                    <li>Université de Dedougou (UDDG)</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5>Contact IFOAD</h5>
+                <p>
+                    Mail : <a href="mailto:urbain.traore@ujkz.fr" class="text-white text-decoration-none">urbain.traore@ujkz.fr</a><br>
+                    Tél : +226 25 30 70 64<br>
+                    Adresse : Avenue Charles de Gaulle, Ouagadougou
+                </p>
+            </div>
+
+            <div class="col-md-4 mb-4 text-md-end">
+                <h5>Date du jour</h5>
+                <p>Date : <span id="date"></span></p>
+                <p id="date-zone" class="fw-bold text-info"></p>
+            </div>
+        </div>
+        
+        <hr class="bg-light">
+        
+        <div class="text-center">
+            <p class="mb-0">&copy; 2026 IFOAD - Institut de Formation Ouverte et à Distance</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS local -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+    // Affichage de la date
+    document.getElementById("date").textContent = new Date().toLocaleDateString('fr-FR', {
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    });
+    </script>
+
+</body>
+</html>

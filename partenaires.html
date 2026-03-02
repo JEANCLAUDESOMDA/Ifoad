@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partenaires - IFOAD-UJKZ</title>
+
+    <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CSS personnalisé intégré -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* Ouvrir les dropdowns au survol */
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        /* Animation douce pour dropdown */
+        .dropdown-menu {
+            transition: all 0.3s ease;
+        }
+
+        /* Ajustement images */
+        .img-thumbnail {
+            max-width: 90px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="bg-light p-3" role="banner">
+    <div class="d-flex justify-content-between align-items-center">
+        <img src="image/logo_ujkz.png" alt="Logo UJKZ" width="160" height="140">
+        <h1 class="text-center flex-grow-1">Partenaires - IFOAD-UJKZ</h1>
+        <img src="image/logo_ifoad.png" alt="Logo IFOAD" width="120" height="90">
+    </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Navigation principale">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">IFOAD-UJKZ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIFOAD">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarIFOAD">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+
+                <!-- Historique -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="historiqueDropdown" role="button" data-bs-toggle="dropdown">Historique</a>
+                    <ul class="dropdown-menu" aria-labelledby="historiqueDropdown">
+                        <li><a class="dropdown-item" href="historique.html#ujkz">UJKZ</a></li>
+                        <li><a class="dropdown-item" href="historique.html#ifoad">IFOAD</a></li>
+                        <li><a class="dropdown-item" href="historique.html#sia">Licence SIA</a></li>
+                    </ul>
+                </li>
+
+                <!-- Formations -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="formationsDropdown" role="button" data-bs-toggle="dropdown">Formations</a>
+                    <ul class="dropdown-menu" aria-labelledby="formationsDropdown">
+                        <li><a class="dropdown-item" href="formations.html#licence">Licence</a></li>
+                        <li><a class="dropdown-item" href="formations.html#master">Master</a></li>
+                        <li><a class="dropdown-item" href="formations.html#debouches">Débouchés</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link active" href="partenaires.html">Partenaires</a></li>
+
+                <!-- Documentation -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="documentationDropdown" role="button" data-bs-toggle="dropdown">Documentation</a>
+                    <ul class="dropdown-menu" aria-labelledby="documentationDropdown">
+                        <li><a class="dropdown-item" href="documentation.html#licence">Licence</a></li>
+                        <li><a class="dropdown-item" href="documentation.html#master">Master</a></li>
+                    </ul>
+                </li>
+
+                <!-- Établissements -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="etablissementsDropdown" role="button" data-bs-toggle="dropdown">Établissements</a>
+                    <ul class="dropdown-menu" aria-labelledby="etablissementsDropdown">
+                        <li><a class="dropdown-item" href="index.html">IFOAD</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#ibam">IBAM</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#ipermic">IPERMIC</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#issp">ISSP</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#igeed">IGEED</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#issdh">ISSDH</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sh">SH</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#lac">LAC</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#svt">SVT</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sds">SDS</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sea">SEA</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="traitement.html">Traitement</a></li>
+                <li class="nav-item"><a class="nav-link" href="admission.html">Admission</a></li>
+
+                <!-- Programme -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="programmeDropdown" role="button" data-bs-toggle="dropdown">Programme</a>
+                    <ul class="dropdown-menu" aria-labelledby="programmeDropdown">
+                        <li><a class="dropdown-item" href="programme.html#licence1">Licence 1</a></li>
+                        <li><a class="dropdown-item" href="programme.html#licence2">Licence 2</a></li>
+                        <li><a class="dropdown-item" href="programme.html#licence3">Licence 3</a></li>
+                        <li><a class="dropdown-item" href="programme.html#master">Master</a></li>
+                    </ul>
+                </li>
+
+                <!-- Personnel -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="personnelDropdown" role="button" data-bs-toggle="dropdown">Personnel</a>
+                    <ul class="dropdown-menu" aria-labelledby="personnelDropdown">
+                        <li><a class="dropdown-item" href="personnel.html#direction">Direction</a></li>
+                        <li><a class="dropdown-item" href="personnel.html#enseignants">Enseignants</a></li>
+                        <li><a class="dropdown-item" href="personnel.html#atos">Personnel ATOS</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="actualites.html">Actualités</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Contenu principal -->
+    <main class="container my-4">
+        <section>
+            <h2 class="text-center mb-4">Nos Partenaires</h2>
+            <p class="lead text-center mb-4">
+                Voici quelques partenaires institutionnels et académiques de l'IFOAD-UJKZ :
+            </p>
+            
+            <div class="row justify-content-center g-4">
+                <!-- Partenaire 1 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 text-center border-primary">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                            <a href="https://me.bf" target="_blank" class="text-decoration-none">
+                                <img src="image/maison_de_l_entreprise.jpg" alt="Maison de l'Entreprise du Burkina Faso" class="img-fluid mb-3" style="max-height: 120px;">
+                                <h5 class="card-title text-primary">Maison de l'Entreprise du Burkina Faso</h5>
+                            </a>
+                            <p class="card-text">Partenaire économique et entrepreneurial pour le développement des compétences professionnelles.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Partenaire 2 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 text-center border-success">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                            <a href="https://www.undp.org/fr/burkina-faso" target="_blank" class="text-decoration-none">
+                                <img src="image/pnud.jpg" alt="PNUD Burkina Faso" class="img-fluid mb-3" style="max-height: 120px;">
+                                <h5 class="card-title text-success">PNUD Burkina Faso</h5>
+                            </a>
+                            <p class="card-text">Programme des Nations Unies pour le développement, partenaire dans les projets de développement durable.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Partenaire 3 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 text-center border-warning">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                            <a href="https://www.cesag.sn" target="_blank" class="text-decoration-none">
+                                <img src="image/csag.jpg" alt="CESAG Dakar" class="img-fluid mb-3" style="max-height: 120px;">
+                                <h5 class="card-title text-warning">CESAG Dakar</h5>
+                            </a>
+                            <p class="card-text">Centre Africain d'Études Supérieures en Gestion, partenaire académique pour les formations en gestion.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Partenaire 4 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 text-center border-info">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                            <a href="https://www.africamultiple.uni-bayreuth.de" target="_blank" class="text-decoration-none">
+                                <img src="image/africamultiplex.jpg" alt="Africa Multiple" class="img-fluid mb-3" style="max-height: 120px;">
+                                <h5 class="card-title text-info">Africa Multiple</h5>
+                            </a>
+                            <p class="card-text">Réseau de recherche africain pour les études avancées et la coopération académique internationale.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Partenaire 5 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 text-center border-danger">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                            <a href="https://museenational.bf" target="_blank" class="text-decoration-none">
+                                <img src="image/musee.jpg" alt="Musée National du Faso" class="img-fluid mb-3" style="max-height: 120px;">
+                                <h5 class="card-title text-danger">Musée National du Faso</h5>
+                            </a>
+                            <p class="card-text">Partenaire culturel pour la préservation et la valorisation du patrimoine burkinabè.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Partenaire 6 -->
+                <div class="col-md-4 col-sm-6">
+                    <div class="card h-100 text-center border-dark">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                            <a href="https://www.auf.org/" target="_blank" class="text-decoration-none">
+                                <img src="image/auf.jpg" alt="Agence Universitaire de la Francophonie" class="img-fluid mb-3" style="max-height: 120px;">
+                                <h5 class="card-title text-dark">Agence Universitaire de la Francophonie</h5>
+                            </a>
+                            <p class="card-text">Réseau mondial d'établissements d'enseignement supérieur et de recherche francophones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5 p-4 bg-primary text-white rounded">
+                <h4 class="text-center">Pour devenir partenaire</h4>
+                <p class="text-center mb-0">
+                    Si vous souhaitez établir un partenariat avec l'IFOAD-UJKZ, 
+                    veuillez nous contacter à <strong>partenariats@ifoad-ujkz.bf</strong>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+     <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5>Universités Publiques du Burkina</h5>
+                <ul class="list-unstyled">
+                    <li>Université Joseph KI-ZERBO (UJKZ)</li>
+                    <li>Université Thomas SANKARA (UTS)</li>
+                    <li>Université Nazi BONI (UNB)</li>
+                    <li>Université Norbert ZONGO (UNZ)</li>
+                    <li>Université de Fada N'Gourma (UFDG)</li>
+                    <li>Université de Dedougou (UDDG)</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5>Contact IFOAD</h5>
+                <p>
+                    Mail : <a href="mailto:urbain.traore@ujkz.fr" class="text-white text-decoration-none">urbain.traore@ujkz.fr</a><br>
+                    Tél : +226 25 30 70 64<br>
+                    Adresse : Avenue Charles de Gaulle, Ouagadougou
+                </p>
+            </div>
+
+            <div class="col-md-4 mb-4 text-md-end">
+                <h5>Date du jour</h5>
+                <p>Date : <span id="date"></span></p>
+                <p id="date-zone" class="fw-bold text-info"></p>
+            </div>
+        </div>
+        
+        <hr class="bg-light">
+        
+        <div class="text-center">
+            <p class="mb-0">&copy; 2026 IFOAD - Institut de Formation Ouverte et à Distance</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS local -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+    // Affichage de la date
+    document.getElementById("date").textContent = new Date().toLocaleDateString('fr-FR', {
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    });
+    </script>
+
+</body>
+</html>

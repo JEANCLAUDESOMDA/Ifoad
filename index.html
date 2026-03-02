@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - IFOAD-UJKZ</title>
+
+    <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CSS personnalisé intégré -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* Ouvrir les dropdowns au survol */
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        /* Animation douce pour dropdown */
+        .dropdown-menu {
+            transition: all 0.3s ease;
+        }
+
+        /* Ajustement images */
+        .img-thumbnail {
+            max-width: 90px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="bg-light p-3" role="banner">
+    <div class="d-flex justify-content-between align-items-center">
+        <img src="image/logo_ujkz.png" alt="Logo UJKZ" width="160" height="140">
+        <h1 class="text-center flex-grow-1">Accueil - IFOAD-UJKZ</h1>
+        <img src="image/logo_ifoad.png" alt="Logo IFOAD" width="120" height="90">
+    </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Navigation principale">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">IFOAD-UJKZ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIFOAD">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarIFOAD">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Accueil</a></li>
+
+                <!-- Historique -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="historiqueDropdown" role="button" data-bs-toggle="dropdown">Historique</a>
+                    <ul class="dropdown-menu" aria-labelledby="historiqueDropdown">
+                        <li><a class="dropdown-item" href="historique.html#ujkz">UJKZ</a></li>
+                        <li><a class="dropdown-item" href="historique.html#ifoad">IFOAD</a></li>
+                        <li><a class="dropdown-item" href="historique.html#sia">Licence SIA</a></li>
+                    </ul>
+                </li>
+
+                <!-- Formations -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="formationsDropdown" role="button" data-bs-toggle="dropdown">Formations</a>
+                    <ul class="dropdown-menu" aria-labelledby="formationsDropdown">
+                        <li><a class="dropdown-item" href="formations.html#licence">Licence</a></li>
+                        <li><a class="dropdown-item" href="formations.html#master">Master</a></li>
+                        <li><a class="dropdown-item" href="formations.html#debouches">Débouchés</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="partenaires.html">Partenaires</a></li>
+
+                <!-- Documentation -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="documentationDropdown" role="button" data-bs-toggle="dropdown">Documentation</a>
+                    <ul class="dropdown-menu" aria-labelledby="documentationDropdown">
+                        <li><a class="dropdown-item" href="documentation.html#licence">Licence</a></li>
+                        <li><a class="dropdown-item" href="documentation.html#master">Master</a></li>
+                    </ul>
+                </li>
+
+                <!-- Établissements -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="etablissementsDropdown" role="button" data-bs-toggle="dropdown">Établissements</a>
+                    <ul class="dropdown-menu" aria-labelledby="etablissementsDropdown">
+                        <li><a class="dropdown-item" href="index.html">IFOAD</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#ibam">IBAM</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#ipermic">IPERMIC</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#issp">ISSP</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#igeed">IGEED</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#issdh">ISSDH</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sh">SH</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#lac">LAC</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#svt">SVT</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sds">SDS</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sea">SEA</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="traitement.html">Traitement</a></li>
+                <li class="nav-item"><a class="nav-link" href="admission.html">Admission</a></li>
+
+                <!-- Programme -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="programmeDropdown" role="button" data-bs-toggle="dropdown">Programme</a>
+                    <ul class="dropdown-menu" aria-labelledby="programmeDropdown">
+                        <li><a class="dropdown-item" href="programme.html#licence1">Licence 1</a></li>
+                        <li><a class="dropdown-item" href="programme.html#licence2">Licence 2</a></li>
+                        <li><a class="dropdown-item" href="programme.html#licence3">Licence 3</a></li>
+                        <li><a class="dropdown-item" href="programme.html#master">Master</a></li>
+                    </ul>
+                </li>
+
+                <!-- Personnel -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="personnelDropdown" role="button" data-bs-toggle="dropdown">Personnel</a>
+                    <ul class="dropdown-menu" aria-labelledby="personnelDropdown">
+                        <li><a class="dropdown-item" href="personnel.html#direction">Direction</a></li>
+                        <li><a class="dropdown-item" href="personnel.html#enseignants">Enseignants</a></li>
+                        <li><a class="dropdown-item" href="personnel.html#atos">Personnel ATOS</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="actualites.html">Actualités</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Carrousel -->
+    <section class="carousel">
+        <div class="slide active">
+            <img src="image/carousel/image1.jpg" alt="Image 1">
+        </div>
+        <div class="slide">
+            <img src="image/carousel/image2.jpg" alt="Image 2">
+        </div>
+        <div class="slide">
+            <img src="image/carousel/image3.jpg" alt="Image 3">
+        </div>
+        <div class="slide">
+            <img src="image/carousel/image4.jpg" alt="Image 4">
+        </div>
+        <div class="slide">
+            <img src="image/carousel/image5.jpg" alt="Image 5">
+        </div>
+        <div class="slide">
+            <img src="image/carousel/image6.jpg" alt="Image 6">
+        </div>
+    </section>
+
+    <main class="container my-4">
+        <section>
+            <h2>Message de Bienvenue</h2>
+            <p>Bienvenue sur le site officiel de l'Institut de Formation Ouverte et à Distance (IFOAD) de l'Université Joseph Ki-Zerbo. Notre institut s'engage à offrir une formation de qualité, accessible et flexible pour tous les apprenants du Burkina Faso et d'ailleurs.</p>
+            <p>Découvrez nos formations en informatique appliquée, nos programmes de Licence et Master, ainsi que toutes les ressources nécessaires pour votre réussite académique.</p>
+        </section>
+
+        <section>
+            <h2>Message de la Directrice</h2>
+            <p>
+                Chers étudiants, chers visiteurs,<br><br>
+                C'est avec un grand plaisir que je vous accueille sur le site de l'IFOAD-UJKZ. 
+                Notre mission est de démocratiser l'accès à l'enseignement supérieur grâce aux 
+                technologies numériques et à la formation à distance. Nous mettons tout en œuvre 
+                pour vous offrir un environnement d'apprentissage moderne, innovant et adapté aux 
+                défis du 21ème siècle.
+            </p>
+        </section>
+
+        <section>
+            <h3 class="text-center">Effectifs de l'IFOAD</h3>
+            <table class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Catégorie</th>
+                        <th>Hommes</th>
+                        <th>Femmes</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Enseignants</td>
+                        <td>15</td>
+                        <td>5</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Étudiants</td>
+                        <td>69</td>
+                        <td>36</td>
+                        <td>105</td>
+                    </tr>
+                    <tr>
+                        <td>Personnel ATOS</td>
+                        <td>4</td>
+                        <td>4</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td><strong>TOTAL</strong></td>
+                        <td><strong>88</strong></td>
+                        <td><strong>45</strong></td>
+                        <td><strong>133</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5>Universités Publiques du Burkina</h5>
+                <ul class="list-unstyled">
+                    <li>Université Joseph KI-ZERBO (UJKZ)</li>
+                    <li>Université Thomas SANKARA (UTS)</li>
+                    <li>Université Nazi BONI (UNB)</li>
+                    <li>Université Norbert ZONGO (UNZ)</li>
+                    <li>Université de Fada N'Gourma (UFDG)</li>
+                    <li>Université de Dedougou (UDDG)</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5>Contact IFOAD</h5>
+                <p>
+                    Mail : <a href="mailto:urbain.traore@ujkz.fr" class="text-white text-decoration-none">urbain.traore@ujkz.fr</a><br>
+                    Tél : +226 25 30 70 64<br>
+                    Adresse : Avenue Charles de Gaulle, Ouagadougou
+                </p>
+            </div>
+
+            <div class="col-md-4 mb-4 text-md-end">
+                <h5>Date du jour</h5>
+                <p>Date : <span id="date"></span></p>
+                <p id="date-zone" class="fw-bold text-info"></p>
+            </div>
+        </div>
+        
+        <hr class="bg-light">
+        
+        <div class="text-center">
+            <p class="mb-0">&copy; 2026 IFOAD - Institut de Formation Ouverte et à Distance</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS local -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+<script>
+    // Affichage de la date
+    document.getElementById("date").textContent = new Date().toLocaleDateString('fr-FR', {
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    });
+    
+  // Carrousel Automatique avec Transition Douce (uniquement sur index.html)
+  let slides = document.querySelectorAll(".slide");
+  if(slides.length > 0){
+      let index = 0;
+      function changerSlide() {
+          slides[index].classList.remove("active");
+          index = (index + 1) % slides.length;
+          slides[index].classList.add("active");
+      }
+      setInterval(changerSlide, 5000);
+  }
+</script>
+
+</body>
+</html>

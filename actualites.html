@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actualités et informations</title>
+
+    <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CSS personnalisé intégré -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* Ouvrir les dropdowns au survol */
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        /* Animation douce pour dropdown */
+        .dropdown-menu {
+            transition: all 0.3s ease;
+        }
+
+        /* Ajustement images */
+        .img-thumbnail {
+            max-width: 90px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="bg-light p-3" role="banner">
+    <div class="d-flex justify-content-between align-items-center">
+        <img src="image/logo_ujkz.png" alt="Logo UJKZ" width="160" height="140">
+        <h1 class="text-center flex-grow-1">Actualités et informations</h1>
+        <img src="image/logo_ifoad.png" alt="Logo IFOAD" width="120" height="90">
+    </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Navigation principale">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">IFOAD-UJKZ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIFOAD">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarIFOAD">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+
+                <!-- Historique -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="historiqueDropdown" role="button" data-bs-toggle="dropdown">Historique</a>
+                    <ul class="dropdown-menu" aria-labelledby="historiqueDropdown">
+                        <li><a class="dropdown-item" href="historique.html#ujkz">UJKZ</a></li>
+                        <li><a class="dropdown-item" href="historique.html#ifoad">IFOAD</a></li>
+                        <li><a class="dropdown-item" href="historique.html#sia">Licence SIA</a></li>
+                    </ul>
+                </li>
+
+                <!-- Formations -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="formationsDropdown" role="button" data-bs-toggle="dropdown">Formations</a>
+                    <ul class="dropdown-menu" aria-labelledby="formationsDropdown">
+                        <li><a class="dropdown-item" href="formations.html#licence">Licence</a></li>
+                        <li><a class="dropdown-item" href="formations.html#master">Master</a></li>
+                        <li><a class="dropdown-item" href="formations.html#debouches">Débouchés</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="partenaires.html">Partenaires</a></li>
+
+                <!-- Documentation -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="documentationDropdown" role="button" data-bs-toggle="dropdown">Documentation</a>
+                    <ul class="dropdown-menu" aria-labelledby="documentationDropdown">
+                        <li><a class="dropdown-item" href="documentation.html#licence">Licence</a></li>
+                        <li><a class="dropdown-item" href="documentation.html#master">Master</a></li>
+                    </ul>
+                </li>
+
+                <!-- Établissements -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="etablissementsDropdown" role="button" data-bs-toggle="dropdown">Établissements</a>
+                    <ul class="dropdown-menu" aria-labelledby="etablissementsDropdown">
+                        <li><a class="dropdown-item" href="index.html">IFOAD</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#ibam">IBAM</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#ipermic">IPERMIC</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#issp">ISSP</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#igeed">IGEED</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#issdh">ISSDH</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sh">SH</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#lac">LAC</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#svt">SVT</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sds">SDS</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sea">SEA</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="traitement.html">Traitement</a></li>
+                <li class="nav-item"><a class="nav-link" href="admission.html">Admission</a></li>
+
+                <!-- Programme -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="programmeDropdown" role="button" data-bs-toggle="dropdown">Programme</a>
+                    <ul class="dropdown-menu" aria-labelledby="programmeDropdown">
+                        <li><a class="dropdown-item" href="programme.html#licence1">Licence 1</a></li>
+                        <li><a class="dropdown-item" href="programme.html#licence2">Licence 2</a></li>
+                        <li><a class="dropdown-item" href="programme.html#licence3">Licence 3</a></li>
+                        <li><a class="dropdown-item" href="programme.html#master">Master</a></li>
+                    </ul>
+                </li>
+
+                <!-- Personnel -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="personnelDropdown" role="button" data-bs-toggle="dropdown">Personnel</a>
+                    <ul class="dropdown-menu" aria-labelledby="personnelDropdown">
+                        <li><a class="dropdown-item" href="personnel.html#direction">Direction</a></li>
+                        <li><a class="dropdown-item" href="personnel.html#enseignants">Enseignants</a></li>
+                        <li><a class="dropdown-item" href="personnel.html#atos">Personnel ATOS</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link active" href="actualites.html">Actualités</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <h1 class="mb-4">Actualités & Emplois du temps</h1>
+        
+        <!-- Emplois du temps -->
+        <section>
+            <h2 class="border-bottom pb-2">Emplois du temps mensuel - Février 2026</h2>
+            <p class="lead mb-4">Consultez les horaires détaillés par niveau et par jour.</p>
+
+            <!-- Sélecteur de niveau -->
+            <div class="mb-4">
+                <ul class="nav nav-tabs" id="niveauTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="l1-tab" data-bs-toggle="tab" data-bs-target="#l1" type="button">Licence 1</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="l2-tab" data-bs-toggle="tab" data-bs-target="#l2" type="button">Licence 2</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="l3-tab" data-bs-toggle="tab" data-bs-target="#l3" type="button">Licence 3</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="master-tab" data-bs-toggle="tab" data-bs-target="#master" type="button">Master</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="niveauTabContent">
+                
+                <!-- LICENCE 1 -->
+                <div class="tab-pane fade show active" id="l1" role="tabpanel">
+                    <h4 class="mb-3 text-primary">Licence 1 - Systèmes Informatiques Appliqués</h4>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>Jour</th>
+                                    <th>Matière</th>
+                                    <th>Enseignant</th>
+                                    <th>Horaires</th>
+                                    <th>Salle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lundi</td>
+                                    <td>Algorithmique & Programmation</td>
+                                    <td>Dr. Kaboré</td>
+                                    <td>8h00 - 10h00</td>
+                                    <td>En ligne</td>
+                                </tr>
+                                <tr>
+                                    <td>Mardi</td>
+                                    <td>Mathématiques pour l'informatique</td>
+                                    <td>Prof. Ouédraogo</td>
+                                    <td>10h00 - 12h00</td>
+                                    <td>En ligne</td>
+                                </tr>
+                                <tr>
+                                    <td>Mercredi</td>
+                                    <td>Initiation au Web (HTML/CSS)</td>
+                                    <td>M. Sawadogo</td>
+                                    <td>14h00 - 16h00</td>
+                                    <td>Labo 3</td>
+                                </tr>
+                                <tr>
+                                    <td>Jeudi</td>
+                                    <td>Bureautique avancée</td>
+                                    <td>Mme Diallo</td>
+                                    <td>9h00 - 11h00</td>
+                                    <td>En ligne</td>
+                                </tr>
+                                <tr>
+                                    <td>Vendredi</td>
+                                    <td>Anglais technique</td>
+                                    <td>M. Traoré</td>
+                                    <td>15h00 - 17h00</td>
+                                    <td>En ligne</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="alert alert-info mt-3">
+                        <strong>Note :</strong> Les cours marqués "En ligne" se déroulent sur la plateforme IFOAD.
+                    </div>
+                </div>
+
+                <!-- LICENCE 2 -->
+                <div class="tab-pane fade" id="l2" role="tabpanel">
+                    <h4 class="mb-3 text-success">Licence 2 - Systèmes Informatiques Appliqués</h4>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead class="table-success">
+                                <tr>
+                                    <th>Jour</th>
+                                    <th>Matière</th>
+                                    <th>Enseignant</th>
+                                    <th>Horaires</th>
+                                    <th>Type</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lundi</td>
+                                    <td>Base de données (SQL)</td>
+                                    <td>Dr. Nikiéma</td>
+                                    <td>9h00 - 12h00</td>
+                                    <td>TP</td>
+                                </tr>
+                                <tr>
+                                    <td>Mardi</td>
+                                    <td>Réseaux informatiques</td>
+                                    <td>Prof. Compaoré</td>
+                                    <td>8h30 - 11h30</td>
+                                    <td>Cours</td>
+                                </tr>
+                                <tr>
+                                    <td>Mercredi</td>
+                                    <td>Programmation Orientée Objet (Java)</td>
+                                    <td>M. Zongo</td>
+                                    <td>14h00 - 17h00</td>
+                                    <td>TP</td>
+                                </tr>
+                                <tr>
+                                    <td>Jeudi</td>
+                                    <td>Systèmes d'exploitation (Linux)</td>
+                                    <td>M. Kientéga</td>
+                                    <td>10h00 - 13h00</td>
+                                    <td>Cours/TP</td>
+                                </tr>
+                                <tr>
+                                    <td>Vendredi</td>
+                                    <td>Gestion de projet TI</td>
+                                    <td>Mme Konaté</td>
+                                    <td>15h00 - 18h00</td>
+                                    <td>En ligne</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- LICENCE 3 -->
+                <div class="tab-pane fade" id="l3" role="tabpanel">
+                    <h4 class="mb-3 text-warning">Licence 3 - Systèmes Informatiques Appliqués</h4>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead class="table-warning">
+                                <tr>
+                                    <th>Jour</th>
+                                    <th>Matière</th>
+                                    <th>Responsable</th>
+                                    <th>Horaires</th>
+                                    <th>Statut</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lundi</td>
+                                    <td>Développement Web avancé</td>
+                                    <td>Dr. Sanou</td>
+                                    <td>8h30 - 12h30</td>
+                                    <td>Projet</td>
+                                </tr>
+                                <tr>
+                                    <td>Mardi</td>
+                                    <td>Sécurité informatique</td>
+                                    <td>Prof. Diallo</td>
+                                    <td>9h00 - 13h00</td>
+                                    <td>Cours</td>
+                                </tr>
+                                <tr>
+                                    <td>Mercredi</td>
+                                    <td>Projet intégré (Encadrement)</td>
+                                    <td>Équipe pédagogique</td>
+                                    <td>14h00 - 18h00</td>
+                                    <td>Encadrement</td>
+                                </tr>
+                                <tr>
+                                    <td>Jeudi</td>
+                                    <td>Intelligence Artificielle</td>
+                                    <td>M. Ouattara</td>
+                                    <td>10h00 - 14h00</td>
+                                    <td>TP</td>
+                                </tr>
+                                <tr>
+                                    <td>Vendredi</td>
+                                    <td>Préparation mémoire</td>
+                                    <td>Tuteur assigné</td>
+                                    <td>Journée</td>
+                                    <td>Autonome</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- MASTER -->
+                <div class="tab-pane fade" id="master" role="tabpanel">
+                    <h4 class="mb-3 text-dark">Master - Spécialités avancées</h4>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Spécialité</th>
+                                    <th>Module</th>
+                                    <th>Enseignant</th>
+                                    <th>Jour</th>
+                                    <th>Horaires</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td rowspan="2">Data Science</td>
+                                    <td>Big Data & Analytics</td>
+                                    <td>Dr. Tembo</td>
+                                    <td>Lundi</td>
+                                    <td>10h00 - 16h00</td>
+                                </tr>
+                                <tr>
+                                    <td>Machine Learning</td>
+                                    <td>Prof. Cissé</td>
+                                    <td>Mercredi</td>
+                                    <td>9h00 - 15h00</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="2">Cybersécurité</td>
+                                    <td>Pentesting avancé</td>
+                                    <td>M. Keita</td>
+                                    <td>Mardi</td>
+                                    <td>14h00 - 18h00</td>
+                                </tr>
+                                <tr>
+                                    <td>Forensique numérique</td>
+                                    <td>Mme Bah</td>
+                                    <td>Jeudi</td>
+                                    <td>13h00 - 17h00</td>
+                                </tr>
+                                <tr>
+                                    <td>DevOps</td>
+                                    <td>Cloud & Conteneurs</td>
+                                    <td>M. Sano</td>
+                                    <td>Vendredi</td>
+                                    <td>10h00 - 18h00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="alert alert-secondary mt-3">
+                        <strong>Modalités Master :</strong> Horaires flexibles, travail en autonomie et séances d'encadrement sur rendez-vous.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dernières actualités -->
+        <section class="mt-5">
+            <h2 class="border-bottom pb-2">Dernières actualités</h2>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">📘 Le Centre universitaire de Gaoua devient université</h5>
+                            <p class="card-text">Le Centre universitaire de Gaoua a été transformé en Université Sib Sié Faustin suite à un décret adopté en Conseil des ministres le 5 février 2026. Cette évolution marque un jalon important dans l'enseignement supérieur burkinabè en répondant à la demande croissante de formation et de recherche.</p>
+                            <p class="small text-muted">9 février 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">🎓 Réformes pour l'orientation professionnelle</h5>
+                            <p class="card-text">Le gouvernement souhaite qu'à l'horizon 2050, 60% des jeunes du supérieur soient orientés vers des formations techniques et professionnelles, afin d'aligner davantage le système éducatif sur les besoins du marché du travail au Burkina Faso.</p>
+                            <p class="small text-muted">11 février 2026</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">📻 Nouvelle chaîne éducative nationale</h5>
+                            <p class="card-text">Le Burkina Faso a lancé sa première chaîne éducative nationale (RTE) pour élargir l'accès à l'éducation, la culture et l'information, combinant radio, télévision et contenu numérique pour toucher tous les publics, notamment en zones rurales.</p>
+                            <p class="small text-muted">Novembre 2025</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">📚 Journée OHADA du droit des affaires étudiant</h5>
+                            <p class="card-text">Les 20-21 février 2026, une Journée du droit des affaires OHADA se tiendra à Ouagadougou pour renforcer les connaissances juridiques des étudiants à l'université, avec panels, conférences et échanges interactifs.</p>
+                            <p class="small text-muted">10 février 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+     <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5>Universités Publiques du Burkina</h5>
+                <ul class="list-unstyled">
+                    <li>Université Joseph KI-ZERBO (UJKZ)</li>
+                    <li>Université Thomas SANKARA (UTS)</li>
+                    <li>Université Nazi BONI (UNB)</li>
+                    <li>Université Norbert ZONGO (UNZ)</li>
+                    <li>Université de Fada N'Gourma (UFDG)</li>
+                    <li>Université de Dedougou (UDDG)</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5>Contact IFOAD</h5>
+                <p>
+                    Mail : <a href="mailto:urbain.traore@ujkz.fr" class="text-white text-decoration-none">urbain.traore@ujkz.fr</a><br>
+                    Tél : +226 25 30 70 64<br>
+                    Adresse : Avenue Charles de Gaulle, Ouagadougou
+                </p>
+            </div>
+
+            <div class="col-md-4 mb-4 text-md-end">
+                <h5>Date du jour</h5>
+                <p>Date : <span id="date"></span></p>
+                <p id="date-zone" class="fw-bold text-info"></p>
+            </div>
+        </div>
+        
+        <hr class="bg-light">
+        
+        <div class="text-center">
+            <p class="mb-0">&copy; 2026 IFOAD - Institut de Formation Ouverte et à Distance</p>
+        </div>
+    </div>
+</footer>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+    // Affichage de la date
+    document.getElementById("date").textContent = new Date().toLocaleDateString('fr-FR', {
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    });
+
+    </script>
+
+</body>
+</html>

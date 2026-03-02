@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historique</title>
+
+    <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CSS personnalisé intégré -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <style>
+        /* Ouvrir les dropdowns au survol */
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        /* Animation douce pour dropdown */
+        .dropdown-menu {
+            transition: all 0.3s ease;
+        }
+
+        /* Ajustement images */
+        .img-thumbnail {
+            max-width: 90px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="bg-light p-3" role="banner">
+    <div class="d-flex justify-content-between align-items-center">
+        <img src="image/logo_ujkz.png" alt="Logo UJKZ" width="160" height="140">
+        <h1 class="text-center flex-grow-1">Historique</h1>
+        <img src="image/logo_ifoad.png" alt="Logo IFOAD" width="120" height="90">
+    </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Navigation principale">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">IFOAD-UJKZ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIFOAD">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarIFOAD">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+
+                <!-- Historique -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="historiqueDropdown" role="button" data-bs-toggle="dropdown">Historique</a>
+                    <ul class="dropdown-menu" aria-labelledby="historiqueDropdown">
+                        <li><a class="dropdown-item" href="historique.html#ujkz">UJKZ</a></li>
+                        <li><a class="dropdown-item" href="historique.html#ifoad">IFOAD</a></li>
+                        <li><a class="dropdown-item" href="historique.html#sia">Licence SIA</a></li>
+                    </ul>
+                </li>
+
+                <!-- Formations -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="formationsDropdown" role="button" data-bs-toggle="dropdown">Formations</a>
+                    <ul class="dropdown-menu" aria-labelledby="formationsDropdown">
+                        <li><a class="dropdown-item" href="formations.html#licence">Licence</a></li>
+                        <li><a class="dropdown-item" href="formations.html#master">Master</a></li>
+                        <li><a class="dropdown-item" href="formations.html#debouches">Débouchés</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="partenaires.html">Partenaires</a></li>
+
+                <!-- Documentation -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="documentationDropdown" role="button" data-bs-toggle="dropdown">Documentation</a>
+                    <ul class="dropdown-menu" aria-labelledby="documentationDropdown">
+                        <li><a class="dropdown-item" href="documentation.html#licence">Licence</a></li>
+                        <li><a class="dropdown-item" href="documentation.html#master">Master</a></li>
+                    </ul>
+                </li>
+
+                <!-- Établissements -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="etablissementsDropdown" role="button" data-bs-toggle="dropdown">Établissements</a>
+                    <ul class="dropdown-menu" aria-labelledby="etablissementsDropdown">
+                        <li><a class="dropdown-item" href="index.html">IFOAD</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#ibam">IBAM</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#ipermic">IPERMIC</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#issp">ISSP</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#igeed">IGEED</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#issdh">ISSDH</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sh">SH</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#lac">LAC</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#svt">SVT</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sds">SDS</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sea">SEA</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="traitement.html">Traitement</a></li>
+                <li class="nav-item"><a class="nav-link" href="admission.html">Admission</a></li>
+
+                <!-- Programme -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="programmeDropdown" role="button" data-bs-toggle="dropdown">Programme</a>
+                    <ul class="dropdown-menu" aria-labelledby="programmeDropdown">
+                        <li><a class="dropdown-item" href="programme.html#licence1">Licence 1</a></li>
+                        <li><a class="dropdown-item" href="programme.html#licence2">Licence 2</a></li>
+                        <li><a class="dropdown-item" href="programme.html#licence3">Licence 3</a></li>
+                        <li><a class="dropdown-item" href="programme.html#master">Master</a></li>
+                    </ul>
+                </li>
+
+                <!-- Personnel -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="personnelDropdown" role="button" data-bs-toggle="dropdown">Personnel</a>
+                    <ul class="dropdown-menu" aria-labelledby="personnelDropdown">
+                        <li><a class="dropdown-item" href="personnel.html#direction">Direction</a></li>
+                        <li><a class="dropdown-item" href="personnel.html#enseignants">Enseignants</a></li>
+                        <li><a class="dropdown-item" href="personnel.html#atos">Personnel ATOS</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="actualites.html">Actualités</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Contenu principal -->
+    <main class="container my-4">
+
+    <!-- Université Joseph Ki-Zerbo -->
+    <section id="ujkz">
+        <h2>Université Joseph Ki-Zerbo (UJKZ)</h2>
+
+        <p class="lead">
+            L'Université Joseph Ki-Zerbo, créée en 1974, est la première université publique du Burkina Faso.
+        </p>
+
+        <p>
+            L'Université Joseph Ki-Zerbo trouve son origine dans le Centre d'Enseignement Supérieur de Ouagadougou,
+            créé au début des années 1970 afin de répondre aux besoins croissants du pays en cadres qualifiés.
+            En 1974, cet établissement est érigé en Université de Ouagadougou, devenant ainsi la première
+            université publique du Burkina Faso.
+        </p>
+
+        <p>
+            Au fil des décennies, l'université connaît une expansion progressive marquée par la création
+            de nouvelles Unités de Formation et de Recherche (UFR) et d'instituts spécialisés, ainsi que
+            par la diversification des filières de formation et des activités de recherche scientifique.
+        </p>
+
+        <p>
+            Dans le cadre des réformes du système d'enseignement supérieur et afin de rendre hommage à une
+            figure majeure de l'histoire intellectuelle africaine, l'Université de Ouagadougou est rebaptisée
+            Université Joseph Ki-Zerbo en 2015, en l'honneur de Joseph Ki-Zerbo, historien et penseur burkinabè
+            engagé pour l'éducation, la recherche et le développement de l'Afrique.
+        </p>
+
+        <p>
+            Aujourd'hui, l'UJKZ poursuit ses missions de formation, de recherche scientifique et de service
+            à la communauté, et demeure un acteur stratégique du développement du capital humain et de
+            l'innovation au Burkina Faso.
+        </p>
+    </section>
+
+    <!-- IFOAD -->
+    <section id="ifoad">
+    <h2>Institut de Formation Ouverte et à Distance (IFOAD)</h2>
+
+    <p class="lead">
+        L'Institut de Formation Ouverte et à Distance (IFOAD) a été officiellement créé en 2014 au sein de l'Université Joseph Ki-Zerbo,
+        dans le but de démocratiser l'accès à l'enseignement supérieur au Burkina Faso grâce aux technologies numériques.
+    </p>
+
+    <p>
+        Sa mise en place s'inscrit dans le cadre des réformes de l'enseignement supérieur visant à moderniser la formation universitaire
+        et à offrir des alternatives aux étudiants qui ne peuvent suivre les cours en présentiel. L'IFOAD propose des formations diplômantes
+        (Licence, Master) ainsi que des programmes de formation continue et interuniversitaires.
+    </p>
+
+    <p>
+        Depuis sa création, l'IFOAD s'est donné pour mission de favoriser la flexibilité, l'inclusion et la formation tout au long de la vie.
+        Il s'adresse aussi bien aux étudiants qu'aux professionnels en activité, en garantissant des enseignements conformes aux standards
+        académiques de l'UJKZ.
+    </p>
+
+    <p>
+        En s'appuyant sur des plateformes d'apprentissage en ligne et des outils numériques modernes, l'IFOAD contribue à renforcer
+        la visibilité internationale de l'Université Joseph Ki-Zerbo et à élargir l'accès au savoir.
+    </p>
+    </section>
+
+
+    <!-- Licence SIA -->
+    <section id="sia">
+        <h2>Licence Science en Informatique Appliquée (SIA)</h2>
+
+        <p class="lead">
+            La Licence SIA est une filière professionnelle proposée par l'IFOAD en
+            <strong>Science en Informatique Appliquée</strong>.
+        </p>
+
+        <p>
+            Cette formation vise à former des spécialistes capables de concevoir, développer et maintenir
+            des solutions informatiques adaptées aux besoins des entreprises, des administrations et des
+            organisations.
+        </p>
+
+        <p>
+            Les étudiants acquièrent des compétences solides en programmation, génie logiciel, bases de
+            données, réseaux informatiques, systèmes d'exploitation et sécurité informatique, leur
+            permettant une insertion professionnelle efficace ou la poursuite d'études supérieures.
+        </p>
+    </section>
+
+</main>
+
+
+    <!-- Footer -->
+     <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <h5>Universités Publiques du Burkina</h5>
+                <ul class="list-unstyled">
+                    <li>Université Joseph KI-ZERBO (UJKZ)</li>
+                    <li>Université Thomas SANKARA (UTS)</li>
+                    <li>Université Nazi BONI (UNB)</li>
+                    <li>Université Norbert ZONGO (UNZ)</li>
+                    <li>Université de Fada N'Gourma (UFDG)</li>
+                    <li>Université de Dedougou (UDDG)</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <h5>Contact IFOAD</h5>
+                <p>
+                    Mail : <a href="mailto:urbain.traore@ujkz.fr" class="text-white text-decoration-none">urbain.traore@ujkz.fr</a><br>
+                    Tél : +226 25 30 70 64<br>
+                    Adresse : Avenue Charles de Gaulle, Ouagadougou
+                </p>
+            </div>
+
+            <div class="col-md-4 mb-4 text-md-end">
+                <h5>Date du jour</h5>
+                <p>Date : <span id="date"></span></p>
+                <p id="date-zone" class="fw-bold text-info"></p>
+            </div>
+        </div>
+        
+        <hr class="bg-light">
+        
+        <div class="text-center">
+            <p class="mb-0">&copy; 2026 IFOAD - Institut de Formation Ouverte et à Distance</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS local -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+    // Affichage de la date
+    document.getElementById("date").textContent = new Date().toLocaleDateString('fr-FR', {
+        weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    });
+    </script>
+
+</body>
+</html>

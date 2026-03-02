@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations</title>
+
+    <!-- Bootstrap CSS local -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- CSS personnalisé intégré -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome (AJOUTÉ POUR LES LOGOS) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        /* Ouvrir les dropdowns au survol */
+        .navbar-nav .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0;
+        }
+
+        /* Animation douce pour dropdown */
+        .dropdown-menu {
+            transition: all 0.3s ease;
+        }
+
+        /* Ajustement images */
+        .img-thumbnail {
+            max-width: 90px;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="bg-light p-3" role="banner">
+    <div class="d-flex justify-content-between align-items-center">
+        <img src="image/logo_ujkz.png" alt="Logo UJKZ" width="160" height="140">
+        <h1 class="text-center flex-grow-1">Formations</h1>
+        <img src="image/logo_ifoad.png" alt="Logo IFOAD" width="120" height="90">
+    </div>
+</header>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" role="navigation" aria-label="Navigation principale">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">IFOAD-UJKZ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarIFOAD">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarIFOAD">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+
+                <!-- Historique -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="historiqueDropdown" role="button" data-bs-toggle="dropdown">Historique</a>
+                    <ul class="dropdown-menu" aria-labelledby="historiqueDropdown">
+                        <li><a class="dropdown-item" href="historique.html#ujkz">UJKZ</a></li>
+                        <li><a class="dropdown-item" href="historique.html#ifoad">IFOAD</a></li>
+                        <li><a class="dropdown-item" href="historique.html#sia">Licence SIA</a></li>
+                    </ul>
+                </li>
+
+                <!-- Formations -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="formationsDropdown" role="button" data-bs-toggle="dropdown">Formations</a>
+                    <ul class="dropdown-menu" aria-labelledby="formationsDropdown">
+                        <li><a class="dropdown-item" href="formations.html#licence">Licence</a></li>
+                        <li><a class="dropdown-item" href="formations.html#master">Master</a></li>
+                        <li><a class="dropdown-item" href="formations.html#debouches">Débouchés</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="partenaires.html">Partenaires</a></li>
+
+                <!-- Documentation -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="documentationDropdown" role="button" data-bs-toggle="dropdown">Documentation</a>
+                    <ul class="dropdown-menu" aria-labelledby="documentationDropdown">
+                        <li><a class="dropdown-item" href="documentation.html#licence">Licence</a></li>
+                        <li><a class="dropdown-item" href="documentation.html#master">Master</a></li>
+                    </ul>
+                </li>
+
+                <!-- Établissements -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="etablissementsDropdown" role="button" data-bs-toggle="dropdown">Établissements</a>
+                    <ul class="dropdown-menu" aria-labelledby="etablissementsDropdown">
+                        <li><a class="dropdown-item" href="index.html">IFOAD</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#ibam">IBAM</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#ipermic">IPERMIC</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#issp">ISSP</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#igeed">IGEED</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#issdh">ISSDH</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sh">SH</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#lac">LAC</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#svt">SVT</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sds">SDS</a></li>
+                        <li><a class="dropdown-item" href="etablissements.html#sea">SEA</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="traitement.html">Traitement</a></li>
+                <li class="nav-item"><a class="nav-link" href="admission.html">Admission</a></li>
+
+                <!-- Programme -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="programmeDropdown" role="button" data-bs-toggle="dropdown">Programme</a>
+                    <ul class="dropdown-menu" aria-labelledby="programmeDropdown">
+                        <li><a class="dropdown-item" href="programme.html#licence1">Licence 1</a></li>
+                        <li><a class="dropdown-item" href="programme.html#licence2">Licence 2</a></li>
+                        <li><a class="dropdown-item" href="programme.html#licence3">Licence 3</a></li>
+                        <li><a class="dropdown-item" href="programme.html#master">Master</a></li>
+                    </ul>
+                </li>
+
+                <!-- Personnel -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="personnelDropdown" role="button" data-bs-toggle="dropdown">Personnel</a>
+                    <ul class="dropdown-menu" aria-labelledby="personnelDropdown">
+                        <li><a class="dropdown-item" href="personnel.html#direction">Direction</a></li>
+                        <li><a class="dropdown-item" href="personnel.html#enseignants">Enseignants</a></li>
+                        <li><a class="dropdown-item" href="personnel.html#atos">Personnel ATOS</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="actualites.html">Actualités</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Contenu principal -->
+    <main class="container my-4">
+        <section id="licence">
+            <h2><i class="fas fa-graduation-cap me-2"></i>Licence (IFOAD)</h2>
+            <p class="lead">
+                Les Licences professionnelles de l'IFOAD sont accessibles aux étudiants titulaires du baccalauréat scientifique, technique ou équivalent.
+            </p>
+            <p>
+                L'admission se fait par <strong>test d'entrée</strong>.  
+                Les conditions de passage reposent sur la validation des unités d'enseignement et une moyenne générale minimale de <strong>12/20</strong>.  
+                La formation dure 3 ans (6 semestres), avec des spécialités proposées en troisième année.
+            </p>
+        </section>
+
+        <section id="master">
+            <h2><i class="fas fa-user-graduate me-2"></i>Master (IFOAD)</h2>
+            <p class="lead">
+                Les Masters de l'IFOAD sont ouverts aux étudiants ayant validé une Licence dans le domaine concerné.
+            </p>
+            <p>
+                L'admission se fait également par <strong>test d'entrée</strong>.  
+                Le passage en deuxième année dépend de la réussite aux modules et de la soutenance d'un projet de recherche ou mémoire, avec une moyenne générale minimale de <strong>12/20</strong>.
+            </p>
+        </section>
+
+        <!-- Tableau comparatif -->
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Comparatif Licence vs Master</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Formation</th>
+                            <th>Conditions d'accès</th>
+                            <th>Conditions de passage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Licence</strong></td>
+                            <td>Baccalauréat scientifique/technique + test d'entrée</td>
+                            <td>Validation des UE + moyenne ≥ 12/20</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Master</strong></td>
+                            <td>Licence validée + test d'entrée</td>
+                            <td>Modules validés + mémoire soutenu + moyenne ≥ 12/20</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="debouches">
+    <h2>
+        <i class="fas fa-briefcase me-2"></i>Débouchés
+    </h2>
+
+    <div class="row">
+
+        <!-- Programmeur -->
+        <div class="col-md-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-laptop-code text-primary me-2"></i>
+                        Programmeur / Développeur logiciel
+                    </h5>
+                    <p class="card-text">
+                        Conçoit et écrit des applications adaptées aux besoins des utilisateurs.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Admin système -->
+        <div class="col-md-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-network-wired text-primary me-2"></i>
+                        Administrateur système et réseau
+                    </h5>
+                    <p class="card-text">
+                        Gère et sécurise les infrastructures informatiques d'une organisation.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Base de données -->
+        <div class="col-md-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-database text-primary me-2"></i>
+                        Administrateur de bases de données
+                    </h5>
+                    <p class="card-text">
+                        Organise, protège et optimise l'accès aux données.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Développeur web -->
+        <div class="col-md-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-globe text-primary me-2"></i>
+                        Développeur web / Webmestre
+                    </h5>
+                    <p class="card-text">
+                        Crée et maintient des sites internet et plateformes en ligne.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sécurité -->
+        <div class="col-md-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-shield-halved text-primary me-2"></i>
+                        Conseiller en sécurité informatique
+                    </h5>
+                    <p class="card-text">
+                        Identifie les risques et propose des solutions de protection.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Analyste -->
+        <div class="col-md-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-chart-line text-primary me-2"></i>
+                        Analyste et concepteur de systèmes
+                    </h5>
+                    <p class="card-text">
+                        Étudie les besoins et met en place des solutions informatiques adaptées.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gestionnaire projet -->
+        <div class="col-md-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-diagram-project text-primary me-2"></i>
+                        Gestionnaire de projet TIC
+                    </h5>
+                    <p class="card-text">
+                        Planifie et coordonne les projets technologiques d'une entreprise.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Formateur -->
+        <div class="col-md-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-chalkboard-user text-primary me-2"></i>
+                        Formateur en informatique
+                    </h5>
+                    <p class="card-text">
+                        Transmet ses connaissances aux étudiants ou aux professionnels.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Entrepreneur -->
+        <div class="col-md-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-rocket text-primary me-2"></i>
+                        Entrepreneur (auto-emploi)
+                    </h5>
+                    <p class="card-text">
+                        Développe ses propres solutions ou services numériques.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Consultant -->
+        <div class="col-md-6 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-gears text-primary me-2"></i>
+                        Consultant en infrastructures numériques
+                    </h5>
+                    <p class="card-text">
+                        Accompagne les organisations dans la mise en place de solutions modernes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chercheur -->
+        <div class="col-md-12 mb-3">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <i class="fas fa-flask text-primary me-2"></i>
+                        Chercheur / Doctorant
+                    </h5>
+                    <p class="card-text">
+                        Poursuit des études avancées et contribue à l'innovation scientifique.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+</main>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white pt-5 pb-3 mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <h5>Universités Publiques du Burkina</h5>
+                        <ul class="list-unstyled">
+                            <li>Université Joseph KI-ZERBO (UJKZ)</li>
+                            <li>Université Thomas SANKARA (UTS)</li>
+                            <li>Université Nazi BONI (UNB)</li>
+                            <li>Université Norbert ZONGO (UNZ)</li>
+                            <li>Université de Fada N'Gourma (UFDG)</li>
+                            <li>Université de Dedougou (UDDG)</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <h5>Contact IFOAD</h5>
+                        <p>
+                            Mail : 
+                            <a href="mailto:urbain.traore@ujkz.fr" class="text-white text-decoration-none">
+                                urbain.traore@ujkz.fr
+                            </a><br>
+                            Tél : +226 25 30 70 64<br>
+                            Adresse : Avenue Charles de Gaulle, Ouagadougou
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 mb-4 text-md-end">
+                        <h5>Date du jour</h5>
+                        <p>Date : <span id="date"></span></p>
+                        <p id="date-zone" class="fw-bold text-info"></p>
+                    </div>
+                </div>
+
+                <hr class="border-light">
+
+                <div class="text-center">
+                    <p class="mb-0">&copy; IFOAD (Institut de formation Ouverte et à Distance) - Tous droits réservés.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS local -->
+        <script src="js/bootstrap.bundle.min.js"></script>
+
+        <script>
+        // Affichage de la date
+        document.getElementById("date").textContent = new Date().toLocaleDateString('fr-FR', {
+            weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+        });
+        </script>
+
+    </body>
+</html>
